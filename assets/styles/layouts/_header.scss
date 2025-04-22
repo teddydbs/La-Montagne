@@ -1,0 +1,26 @@
+header {
+  min-height: 100vh;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: $white1;
+
+    h1 {
+      @include title;
+      font-size: 4rem;
+      line-height: 90px;
+    }
+
+    p {
+      padding: 40px;
+    }
+  }
+
+  nav {
+    display: flex;
+  }
+}

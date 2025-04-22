@@ -1,1 +1,75 @@
-/*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: "inter-bold";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: rgb(243, 243, 243);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: url(../images/bg.jpg) fixed center/cover;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: merri, serif;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(17, 17, 17);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+header {
+  min-height: 100vh;
+}
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: rgb(243, 243, 243);
+}
+header .header-content h1 {
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 90px;
+}
+header .header-content p {
+  padding: 40px;
+}
+header nav {
+  display: flex;
+}/*# sourceMappingURL=styles.css.map */
